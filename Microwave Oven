@@ -1,0 +1,27 @@
+A microwave oven manufacturer recommends that when heating two items, add 50% to the heating time, and when heating three items double the heating time. Heating more than three items at once is not recommended. Write a program that asks the user for the number of items and the single-item heating time. The program then writes out the recommended heating time.
+
+Sample Input and Output :
+
+Enter the number of items
+
+2
+
+Enter the single item heating time
+
+5.0
+
+The recommended heating time is 7.50
+
+
+print("Enter the number of items")
+A=int(input())
+print("Enter the single item heating time")
+B=float(input())
+X=B+(50/100)*B
+Y=B+2*B
+if A==2:
+    print("The recommended heating time is %.2f"%X)
+elif A==3:
+    print("The recommended heating time is %.2f"%Y)
+else:
+    print("Number of items is more")
